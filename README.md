@@ -38,22 +38,23 @@ https://user-management-api-mace.onrender.com
 ---
 
 ## Project Structure
+
+```
 src
 │
 ├── components
-│ ├── Login.jsx
-│ ├── Register.jsx
-│ └── Profile.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   └── Profile.jsx
 │
 ├── services
-│ └── api.js
+│   └── api.js
 │
 ├── assets
 │
 ├── App.jsx
 └── main.jsx
-
----
+```
 
 ## Deployment
 
