@@ -26,9 +26,7 @@ function Profile() {
     image: null
   });
 
-  /* ------------------ */
-  /* Protected Route    */
-  /* ------------------ */
+
 
   useEffect(() => {
 
@@ -40,9 +38,6 @@ function Profile() {
   }, [email, navigate]);
 
 
-  /* ------------------ */
-  /* Fetch Profile Data */
-  /* ------------------ */
 
   useEffect(() => {
 
@@ -73,10 +68,6 @@ function Profile() {
   }, [email]);
 
 
-  /* ------------------ */
-  /* Handle Input       */
-  /* ------------------ */
-
   const handleChange = (e) => {
 
     const { name, value, files } = e.target;
@@ -103,10 +94,7 @@ function Profile() {
 
   };
 
-
-  /* ------------------ */
-  /* Update Profile     */
-  /* ------------------ */
+      
 
   const handleUpdate = async (e) => {
 
@@ -147,10 +135,6 @@ function Profile() {
   };
 
 
-  /* ------------------ */
-  /* Logout             */
-  /* ------------------ */
-
   const logout = () => {
 
     localStorage.removeItem("email");
@@ -158,10 +142,6 @@ function Profile() {
 
   };
 
-
-  /* ------------------ */
-  /* Loader             */
-  /* ------------------ */
 
   if (!user) {
 
@@ -180,6 +160,7 @@ function Profile() {
     <div className="profile-container">
 
       {/* Illustration */}
+      
          <ToastContainer position="top-right" autoClose={2000} />
       <div className="profile-left">
         <img src={profileImg} alt="profile illustration"/>
